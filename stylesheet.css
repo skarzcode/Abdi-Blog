@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: teal;
+    min-height: 100vh;
+}
+
+
+header{
+    width: 100%;
+    height: 30%;
+    background-color: black
+}
+
+.logoContainer{
+    width: 18%;
+    height: 70%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.popularArticle{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-top: solid grey 1px;
+    background-color: grey;
+}
+
+.popularArticle a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    height: 30%;
+    background-color: aliceblue;
+    display: flex;
+    
+}
+
+.socialsContainer{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialsContainer a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.social{
+    width: 33%;
+    object-fit: contain;
+}
+
+.introContainer{
+    width: 100%;
+    height: 15%;
+    background-color: #7AC9ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introContainer h1{
+    font-size: 50px;
+    color: white;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rebeccapurple;
+}
+
+.blogArticles{
+    width: 70%;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+
+@media only screen and (max-width: 600px){
+    .socialsContainer{
+        display: none;
+    }
+
+    .popularArticle{
+        width: 100%;
+    }
+
+    .logoContainer{
+        width: 100%;
+    }
+
+    .introContainer h1{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+.navArticle{
+font-size: 12px;
+}
+
+.navHeader{
+    font-size: 16px;
+}
+
+.introContainer h1{
+    font-size: 22px;
+}
+
+}
